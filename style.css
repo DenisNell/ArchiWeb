@@ -1,7 +1,8 @@
 :root {
-    --font-family: "Lato", sans-serif;
-    --second-family: "Georgia", sans-serif;
-    
+    --font-family: "Playfair Display", sans-serif;
+    --second-family: "Inter", sans-serif;
+    --third-family: "Barlow", sans-serif;
+
     --white: #fff;
     --black: #000;
     --gray: #484848;
