@@ -30,3 +30,183 @@ li {
     margin: 0;
     padding: 0;
 }
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.container_inner{
+  max-width: 1241px;
+  margin: 0 auto;
+}
+
+
+/* Меню и навигация */
+.label{}
+
+.menu {
+}
+
+.menu_ContainerFlex {
+  display: flex;
+  max-width: 1241px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.menu_Logo {
+  font-family: var(--third-family);
+font-weight: 600;
+font-size: 42px;
+color: #2f2e2e;
+}
+.menu_containerLink{
+  display: flex;
+  gap: 64px;
+}
+.menu_containerLink ul{
+  display: flex;
+  max-width: 580px;
+  width: 100%;
+  gap: 106px;
+  align-items: center;
+}
+.menu_link {
+  font-family: var(--second-family);
+font-weight: 700;
+font-size: 20px;
+text-align: center;
+color: #2f2e2e;  
+}
+.menu_icon {
+}
+
+/* Header */
+.label{}
+
+.header {
+}
+.header_img {
+}
+.header_infoContainer {
+}
+.header_infoBlock {
+}
+.header_title {
+}
+.header_text {
+}
+
+/* Our Sevices */
+.label{}
+
+.ourServices {
+}
+.ourServices_title {
+}
+.ourServices_infoBlockFlex {
+  display: flex;
+}
+.ourServices_Card {
+}
+.ourServices_CardIcon {
+}
+.ourServices_CardName {
+}
+.ourServices_CardText {
+}
+
+/* About Us */
+.label{}
+
+.aboutUs {
+}
+.aboutUs_ContainerFlex {
+  display: flex;  
+}
+.aboutUs_Img {
+}
+.aboutUs_blockInfo {
+}
+.aboutUs_blockInfoTitle {
+}
+.aboutUs_blockInfoText {
+}
+.aboutUs_blockInfoLink {
+}
+
+
+/* Our Projects */
+.label{}
+
+.ourProjects {
+}
+.ourProjects_title {
+}
+.ourProjects_box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.ourProjects_card {
+}
+.ourProjects_cardImg {
+}
+.ourProjects_cardTextOne {
+}
+.ourProjects_cardTextTwo {
+}
+
+/* Testimonial */
+.label{}
+
+.testimonial {
+}
+.testimonial_title {
+}
+.testimonial_box {
+  display: flex;
+}
+.testimonial_boxCard {
+}
+.testimonial_boxCardInfo {
+}
+.testimonial_boxCardName {
+}
+.testimonial_boxCardText {
+}
+
+/* Footer */
+.label{}
+
+.footer {
+}
+.footer_boxBg {
+  background-color: #2E2F32;
+}
+.footer_infoBoxFlex {
+  display: flex;
+  max-width: 1241px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.footer_contactBoxOne {
+}
+.footer_contactBoxOneLogo {
+}
+.footer_contactBoxOneText {
+}
+.footer_contactBoxOneIcons {
+}
+.footer_contactBoxTwo {
+}
+.footer_contactBoxTwoTitle {
+}
+.footer_contactBoxTwoText {
+}
