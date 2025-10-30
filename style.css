@@ -52,7 +52,7 @@ a {
 .title {
   font-family: var(--font-family);
   font-weight: 900;
-  font-size: 61px;
+  font-size: 65px;
   text-align: center;
   color: var(--general);
 }
@@ -67,6 +67,7 @@ a {
   max-width: 1241px;
   margin: 0 auto;
   justify-content: space-between;
+  padding: 47px 0;
 }
 
 .menu_Logo {
@@ -102,22 +103,27 @@ a {
 /* Header */
 .label {}
 
-.header {}
+.header {
+  margin-top: 44px;
+}
+
+.headbox {
+  position: relative;
+}
 
 .header_img {
   background-image: url(img/header.png);
   max-width: 1150px;
   width: 100%;
   height: 739px;
-  position: relative;
   margin-left: auto;
 }
 
 .header_infoContainer {
   position: absolute;
+  left: 0;
   top: 50%;
   transform: translateY(-50%);
-  margin-right: auto;
   max-width: 691px;
   width: 100%;
   height: 550px;
@@ -126,10 +132,12 @@ a {
 
 .header_infoBlock {
   max-width: 436px;
-  margin: 0 auto;
+  margin: 136px auto;
 }
 
-.header_title {}
+.header_title {
+  text-align: left;
+}
 
 .header_text {
   font-family: var(--second-family);
@@ -143,78 +151,148 @@ a {
 
 .ourServices {}
 
-.ourServices_title {}
+.ourServices_title {
+  padding: 14px 0;
+}
 
 .ourServices_infoBlockFlex {
   display: flex;
+  justify-content: space-around;
+  margin-top: 24px;
 }
 
 .ourServices_Card {}
 
 .ourServices_CardIcon {}
 
-.ourServices_CardName {}
+.ourServices_CardName {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 27px;
+  text-align: center;
+  color: var(--general);
+}
 
-.ourServices_CardText {}
+.ourServices_CardText {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: var(--general);
+}
 
 /* About Us */
 .label {}
 
-.aboutUs {}
+.aboutUs {
+  padding-top: 154px;
+}
 
 .aboutUs_ContainerFlex {
   display: flex;
+  gap: 87px;
 }
 
 .aboutUs_Img {}
 
 .aboutUs_blockInfo {}
 
-.aboutUs_blockInfoTitle {}
+.aboutUs_blockInfoTitle {
+  margin-top: 62px;
+  text-align: left;
+}
 
-.aboutUs_blockInfoText {}
+.aboutUs_blockInfoText {
+  margin-top: 19px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 50px;
+  color: var(--general);
+}
 
-.aboutUs_blockInfoLink {}
+.aboutUs_blockInfoLink {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--general);
+  display: block;
+  margin-top: 42px;
+}
 
 
 /* Our Projects */
 .label {}
 
-.ourProjects {}
+.ourProjects {
+  padding-top: 90px;
+}
 
-.ourProjects_title {}
+.ourProjects_title {
+  text-align: left;
+}
 
 .ourProjects_box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 65px;
+  justify-items: center;
+  gap: 85px 100px;
 }
 
 .ourProjects_card {}
 
 .ourProjects_cardImg {}
 
-.ourProjects_cardTextOne {}
+.ourProjects_cardTextOne,
+.ourProjects_cardTextTwo {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 19px;
+  text-align: center;
+  color: var(--general);
+  margin-top: 12px;
+}
 
-.ourProjects_cardTextTwo {}
+.ourProjects_cardTextTwo {
+  margin-top: 0;
+}
 
 /* Testimonial */
 .label {}
 
-.testimonial {}
+.testimonial {
+  margin-top: 85px;
+}
 
 .testimonial_title {}
 
 .testimonial_box {
   display: flex;
+  margin-top: 70px;
+  gap: 100px;
 }
 
-.testimonial_boxCard {}
+.testimonial_boxCard {
+  display: flex;
+  gap: 30px;
+}
 
 .testimonial_boxCardInfo {}
 
-.testimonial_boxCardName {}
+.testimonial_boxCardName {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--general);
+}
 
-.testimonial_boxCardText {}
+.testimonial_boxCardText {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  color: var(--general);
+}
 
 /* Footer */
 .label {}
