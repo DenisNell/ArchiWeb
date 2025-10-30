@@ -3,7 +3,7 @@
   --second-family: "Inter", sans-serif;
   --third-family: "Barlow", sans-serif;
 
-  --white: #fff;
+  --white: #fafafa;
   --black: #000;
   --general: #2f2e2e;
 }
@@ -149,7 +149,12 @@ a {
 /* Our Sevices */
 .label {}
 
-.ourServices {}
+.ourServices {
+}
+.servicebox{
+  background: rgba(37, 77, 77, 0.2);
+  padding-bottom: 77px;
+}
 
 .ourServices_title {
   padding: 14px 0;
@@ -185,7 +190,7 @@ a {
 .label {}
 
 .aboutUs {
-  padding-top: 154px;
+  padding-top: 76px;
 }
 
 .aboutUs_ContainerFlex {
@@ -263,6 +268,7 @@ a {
 
 .testimonial {
   margin-top: 85px;
+  padding-bottom: 150px;
 }
 
 .testimonial_title {}
@@ -270,7 +276,7 @@ a {
 .testimonial_box {
   display: flex;
   margin-top: 70px;
-  gap: 100px;
+  gap: 125px;
 }
 
 .testimonial_boxCard {
@@ -283,15 +289,18 @@ a {
 .testimonial_boxCardName {
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: 28px;
+  font-size: 31px;
   color: var(--general);
+  margin-top: 16px;
 }
 
 .testimonial_boxCardText {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 17px;
+  font-size: 18px;
   color: var(--general);
+  max-width: 307px;
+  margin-top: 16px;
 }
 
 /* Footer */
@@ -301,6 +310,7 @@ a {
 
 .footer_boxBg {
   background-color: #2E2F32;
+  padding-bottom: 50px;
 }
 
 .footer_infoBoxFlex {
@@ -312,14 +322,47 @@ a {
 
 .footer_contactBoxOne {}
 
-.footer_contactBoxOneLogo {}
+.footer_contactBoxOneLogo {
+  font-family: var(--third-family);
+font-weight: 600;
+font-size: 42px;
+color: var(--white);
+margin-top: 47px;
+margin-bottom: 10px;
+}
 
-.footer_contactBoxOneText {}
+.footer_contactBoxOneText {
+  font-family: var(--second-family);
+font-weight: 400;
+font-size: 17px;
+line-height: 171%;
+color: var(--white);
+max-width: 300px;
+margin-bottom: 55px;
+}
 
-.footer_contactBoxOneIcons {}
+.footer_contactBoxOneIcons {
+  display: flex;
+  gap: 35px;
+}
 
 .footer_contactBoxTwo {}
 
-.footer_contactBoxTwoTitle {}
+.footer_contactBoxTwoTitle, .footer_locationTitle {
+  font-family: var(--second-family);
+font-weight: 900;
+font-size: 24px;
+color: var(--white);
+margin-top: 55px;
+margin-bottom: 15px;
+}
 
-.footer_contactBoxTwoText {}
+.footer_contactBoxTwoText {
+  font-family: var(--second-family);
+font-weight: 400;
+font-size: 17px;
+line-height: 171%;
+color: var(--white);
+max-width: 201px;
+margin-bottom: 15px;
+}
