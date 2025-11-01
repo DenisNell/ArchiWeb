@@ -18,8 +18,14 @@
     <div class="container">
       <div class="menu_ContainerFlex">
         <a href="#" class="menu_Logo">ArchiWeb</a>
+        <!-- Бургер-меню -->
+        <div class="burger-menu" id="burgerMenu">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </div>
         <div class="menu_containerLink">
-          <ul>
+          <ul class="menu_linkall">
             <li><a href="#" class="menu_link">Home</a></li>
             <li><a href="#" class="menu_link">Project</a></li>
             <li><a href="#" class="menu_link">About</a></li>
@@ -191,9 +197,27 @@
       </div>
     </div>
   </footer>
-
-
-
 </body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const burgerMenu = document.querySelector('.burger-menu');
+    const menu_Link = document.querySelector('.menu_containerLink');
+    
+    burgerMenu.addEventListener('click', function() {
+        this.classList.toggle('active');
+        menu_Link.classList.toggle('active');
+    });
+    
+    // Закрытие меню при клике на ссылку
+    const menu_link = document.querySelectorAll('.menu_link');
+    menu_link.forEach(link => {
+        link.addEventListener('click', function() {
+            burgerMenu.classList.remove('active');
+            menu_Link.classList.remove('active');
+        });
+    });
+});
+</script>
 
 </html>
