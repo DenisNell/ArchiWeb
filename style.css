@@ -58,10 +58,15 @@ a {
   color: var(--general);
 }
 
+.p_text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 19px;
+  color: var(--general);
+}
+
 /* Меню и навигация */
 .label {}
-
-.menu {}
 
 .menu_ContainerFlex {
   display: flex;
@@ -100,9 +105,10 @@ a {
   color: var(--general);
   padding: 5px;
   border: 2px solid #fff;
-  transition: all 0.2s ease;
+  transition: all 0.1s ease;
 }
-.menu_link:hover{
+
+.menu_link:hover {
   border-bottom: 3px solid #000;
 }
 
@@ -124,7 +130,7 @@ a {
 
 .header_img {
   background-image: url(img/header.png);
-  background-size: contain; 
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   max-width: 1150px;
@@ -163,9 +169,7 @@ a {
 /* Our Sevices */
 .label {}
 
-.ourServices {
-}
-.servicebox{
+.servicebox {
   background: rgba(37, 77, 77, 0.2);
   padding-bottom: 77px;
 }
@@ -179,8 +183,6 @@ a {
   justify-content: space-around;
   margin-top: 24px;
 }
-
-.ourServices_Card {}
 
 .ourServices_CardIcon {
   display: block;
@@ -196,11 +198,7 @@ a {
 }
 
 .ourServices_CardText {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 16px;
   text-align: center;
-  color: var(--general);
 }
 
 /* About Us */
@@ -214,10 +212,6 @@ a {
   display: flex;
   gap: 87px;
 }
-
-.aboutUs_Img {}
-
-.aboutUs_blockInfo {}
 
 .aboutUs_blockInfoTitle {
   margin-top: 62px;
@@ -238,12 +232,11 @@ a {
   font-weight: 600;
   font-size: 24px;
   color: var(--general);
-  display: block;
+  display: inline-block;
   margin-top: 42px;
 }
 
-.aboutUs_blockInfoLink:hover{
-  display: inline-block;
+.aboutUs_blockInfoLink:hover {
   scale: 1.1;
   transition: all 1s linear;
 }
@@ -268,17 +261,9 @@ a {
   gap: 85px 100px;
 }
 
-.ourProjects_card {}
-
-.ourProjects_cardImg {}
-
 .ourProjects_cardTextOne,
 .ourProjects_cardTextTwo {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 19px;
   text-align: center;
-  color: var(--general);
   margin-top: 12px;
 }
 
@@ -294,8 +279,6 @@ a {
   padding-bottom: 150px;
 }
 
-.testimonial_title {}
-
 .testimonial_box {
   display: flex;
   margin-top: 70px;
@@ -307,8 +290,6 @@ a {
   gap: 30px;
 }
 
-.testimonial_boxCardInfo {}
-
 .testimonial_boxCardName {
   font-family: var(--font-family);
   font-weight: 700;
@@ -318,18 +299,12 @@ a {
 }
 
 .testimonial_boxCardText {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 18px;
-  color: var(--general);
   max-width: 307px;
   margin-top: 16px;
 }
 
 /* Footer */
 .label {}
-
-.footer {}
 
 .footer_boxBg {
   background-color: #2E2F32;
@@ -343,25 +318,42 @@ a {
   justify-content: space-between;
 }
 
-.footer_contactBoxOne {}
-
 .footer_contactBoxOneLogo {
   font-family: var(--third-family);
-font-weight: 600;
-font-size: 42px;
-color: var(--white);
-margin-top: 47px;
-margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 42px;
+  color: var(--white);
+  margin-top: 47px;
+  margin-bottom: 10px;
+}
+
+.footer_contactBoxTwoTitle,
+.footer_locationTitle {
+  font-family: var(--second-family);
+  font-weight: 900;
+  font-size: 24px;
+  color: var(--white);
+  margin-top: 55px;
+  margin-bottom: 15px;
+}
+
+.footer_contactBoxOneText,
+.footer_contactBoxTwoText {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 171%;
+  color: var(--white);
 }
 
 .footer_contactBoxOneText {
-  font-family: var(--second-family);
-font-weight: 400;
-font-size: 17px;
-line-height: 171%;
-color: var(--white);
-max-width: 300px;
-margin-bottom: 55px;
+  max-width: 300px;
+  margin-bottom: 55px;
+}
+
+.footer_contactBoxTwoText {
+  max-width: 201px;
+  margin-bottom: 15px;
 }
 
 .footer_contactBoxOneIcons {
@@ -369,32 +361,7 @@ margin-bottom: 55px;
   gap: 35px;
 }
 
-.footer_contactBoxOneIcons img:hover{
+.footer_contactBoxOneIcons img:hover {
   scale: 1.5;
   transition: all 0.3s ease;
-}
-
-.footer_contactBoxTwo {}
-
-.footer_contactBoxTwoTitle, .footer_locationTitle {
-  font-family: var(--second-family);
-font-weight: 900;
-font-size: 24px;
-color: var(--white);
-margin-top: 55px;
-margin-bottom: 15px;
-}
-
-.footer_contactBoxTwoText {
-  font-family: var(--second-family);
-font-weight: 400;
-font-size: 17px;
-line-height: 171%;
-color: var(--white);
-max-width: 201px;
-margin-bottom: 15px;
-}
-
-.footer_map{
-  cursor: pointer;
 }
