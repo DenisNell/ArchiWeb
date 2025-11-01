@@ -37,6 +37,7 @@ li {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .container {
@@ -79,14 +80,15 @@ a {
 
 .menu_containerLink {
   display: flex;
-  gap: 64px;
+  align-items: center;
+  gap: 80px;
 }
 
 .menu_containerLink ul {
   display: flex;
   max-width: 580px;
   width: 100%;
-  gap: 106px;
+  gap: 95px;
   align-items: center;
 }
 
@@ -96,9 +98,18 @@ a {
   font-size: 20px;
   text-align: center;
   color: var(--general);
+  padding: 5px;
+  border: 2px solid #fff;
+  transition: all 0.2s ease;
+}
+.menu_link:hover{
+  border-bottom: 3px solid #000;
 }
 
-.menu_icon {}
+.menu_icon:hover {
+  scale: 1.3;
+  transition: all 0.5s ease;
+}
 
 /* Header */
 .label {}
@@ -168,7 +179,10 @@ a {
 
 .ourServices_Card {}
 
-.ourServices_CardIcon {}
+.ourServices_CardIcon {
+  display: block;
+  margin: 0 auto;
+}
 
 .ourServices_CardName {
   font-family: var(--font-family);
@@ -223,6 +237,12 @@ a {
   color: var(--general);
   display: block;
   margin-top: 42px;
+}
+
+.aboutUs_blockInfoLink:hover{
+  display: inline-block;
+  scale: 1.1;
+  transition: all 1s linear;
 }
 
 
@@ -346,6 +366,11 @@ margin-bottom: 55px;
   gap: 35px;
 }
 
+.footer_contactBoxOneIcons img:hover{
+  scale: 1.5;
+  transition: all 0.3s ease;
+}
+
 .footer_contactBoxTwo {}
 
 .footer_contactBoxTwoTitle, .footer_locationTitle {
@@ -365,4 +390,8 @@ line-height: 171%;
 color: var(--white);
 max-width: 201px;
 margin-bottom: 15px;
+}
+
+.footer_map{
+  cursor: pointer;
 }
