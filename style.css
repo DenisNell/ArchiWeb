@@ -391,6 +391,7 @@ a {
 .label {}
 
 @media screen and (max-width: 1280px) {
+
   .footer_infoBoxFlex,
   .ourProjects,
   .aboutUs,
@@ -407,7 +408,7 @@ a {
     grid-template-columns: 1fr 1fr;
     gap: 50px 0;
   }
-  
+
   .aboutUs_ContainerFlex {
     flex-wrap: wrap;
     flex-direction: column-reverse;
@@ -441,23 +442,26 @@ a {
   .menu_containerLink ul {
     gap: 50px;
   }
-  .footer_infoBoxFlex{
+
+  .footer_infoBoxFlex {
     gap: 20px;
   }
 }
 
 .label {}
+
 @media screen and (max-width: 768px) {
-  .menubox{
+  .menubox {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background: white;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding-bottom: 7px;
   }
+
   .burger-menu {
     display: flex;
     flex-direction: column;
@@ -491,6 +495,7 @@ a {
   .burger-menu.active span:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -6px);
   }
+
   /* Конец анимации */
 
   .menu_ContainerFlex {
@@ -499,7 +504,7 @@ a {
   }
 
   .menu_containerLink {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
@@ -510,10 +515,17 @@ a {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     z-index: 1000;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
   }
 
   .menu_containerLink.active {
     display: flex;
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
   }
 
   .menu_linkall {
@@ -527,7 +539,8 @@ a {
     padding: 0;
     margin: 0 auto;
   }
-  .header_infoBlock{
+
+  .header_infoBlock {
     padding: 0 15px;
   }
 
