@@ -492,7 +492,7 @@ a {
     transform: rotate(-45deg) translate(6px, -6px);
   }
   /* Конец анимации */
-  
+
   .menu_ContainerFlex {
     position: relative;
     padding: 0 15px;
@@ -526,6 +526,9 @@ a {
     list-style: none;
     padding: 0;
     margin: 0 auto;
+  }
+  .header_infoBlock{
+    padding: 0 15px;
   }
 
   .ourProjects_box {
