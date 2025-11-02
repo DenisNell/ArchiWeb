@@ -520,7 +520,7 @@ a {
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s ease-in-out;
+    transition: none;
   }
 
   .menu_containerLink.active {
@@ -528,6 +528,7 @@ a {
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
+    transition: all 0.3s ease-in-out;
   }
 
   .menu_linkall {
